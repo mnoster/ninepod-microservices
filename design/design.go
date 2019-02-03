@@ -6,7 +6,9 @@ import . "goa.design/goa/dsl"
 var _ = API("pods", func() {
 	Title("API for working with pods (domains, categories, etc.)")
 	Description("HTTP service for ninepod")
-	Server("http://localhost:8080")
+	Server("http://localhost:8080", func() {
+		Description("Production host")
+	})
 	License(func() {
 		Name("MIT")
 	})
@@ -43,4 +45,10 @@ var _ = Service("pods", func() {
 			Response(StatusOK)
 		})
 	})
+})
+
+var _ = Service("openapi", func() {
+	// Serve the file with relative path ../../gen/http/openapi.json for
+	// requests sent to /swagger.json.
+	Files("/swagger.json", "../../gen/http/openapi.json")
 })

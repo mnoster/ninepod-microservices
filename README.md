@@ -1,6 +1,6 @@
 # ninepod-microservices
 
-## goa
+## goa v2
 
 v2 docs: [https://github.com/goadesign/goa/blob/v2/docs/Guide.md]
 
@@ -9,8 +9,10 @@ v2 docs: [https://github.com/goadesign/goa/blob/v2/docs/Guide.md]
 ```
 go install
 
-go gen ninepod/design
+goa gen ninepod/design
 ```
+
+Note: **Anytime you change the `design.go` file, `cd` into project root `/ninepod` and rerun `goa gen ninepod/design`**
 
 #### Create examples: 
 
