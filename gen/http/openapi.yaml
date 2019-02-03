@@ -41,11 +41,11 @@ paths:
             format: int64
       schemes:
       - http
-  /openapi/swagger.json:
+  /swagger.json:
     get:
       summary: Download ../../gen/http/openapi.json
       description: JSON document containing the API swagger definition
-      operationId: openapi#/openapi/swagger.json
+      operationId: openapi#/swagger.json
       responses:
         "200":
           description: File downloaded
