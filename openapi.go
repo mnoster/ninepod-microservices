@@ -19,6 +19,6 @@ func NewOpenapi(logger *log.Logger) openapi.Service {
 
 // Domains implements domains.
 func (s *openapisrvc) OpenAPI(ctx context.Context) (res int, err error) {
-	s.logger.Print("------ openapi.openapi ---------")
+	s.logger.Print("\n------ openapi.openapi --------\n")
 	return
 }
