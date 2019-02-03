@@ -8,6 +8,18 @@
   revision = "ee938bf735983d53694d79138ad9820efff94c92"
 
 [[projects]]
+  name = "github.com/dimfeld/httptreemux"
+  packages = ["."]
+  revision = "a454a10de4a11f751681a0914461ab9e98c2a3ff"
+  version = "5.0.2"
+
+[[projects]]
+  name = "github.com/gorilla/websocket"
+  packages = ["."]
+  revision = "66b9c49e59c6c48f0ffce28c2d8b8a5678502c6d"
+  version = "v1.4.0"
+
+[[projects]]
   branch = "master"
   name = "github.com/manveru/faker"
   packages = ["."]
@@ -29,6 +41,7 @@
   branch = "master"
   name = "goa.design/goa"
   packages = [
+    ".",
     "codegen",
     "codegen/generator",
     "codegen/server",
@@ -37,8 +50,11 @@
     "eval",
     "expr",
     "grpc/codegen",
+    "http",
     "http/codegen",
     "http/codegen/openapi",
+    "http/middleware",
+    "middleware",
     "pkg"
   ]
   revision = "3f92804cc04bab1c01dfc01d3c52217bbc6550db"
@@ -71,6 +87,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "2a8865422b71610a24010aa1bea96efa9aa698b7fce20dd75a4f852b537880e9"
+  inputs-digest = "7430d898bdfea0e1b6b9dd265268643b031280f6e918ad5eebf933a055b7e06e"
   solver-name = "gps-cdcl"
   solver-version = 1
