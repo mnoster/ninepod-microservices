@@ -12,7 +12,7 @@ go install
 go gen ninepod/design
 ```
 
-Create examples: 
+#### Create examples: 
 
 ```
 goa example ninepod/design
@@ -33,7 +33,7 @@ go build
 ```
 
 
-Test the Service running on Server:
+#### Test the Service running on above Server
 
 Pass in appropriate required request parameters as flags.
 
