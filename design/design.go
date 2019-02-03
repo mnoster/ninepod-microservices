@@ -6,6 +6,10 @@ import . "goa.design/goa/dsl"
 var _ = API("pods", func() {
 	Title("API for working with pods (domains, categories, etc.)")
 	Description("HTTP service for ninepod")
+	Server("http://localhost:8080")
+	License(func() {
+		Name("MIT")
+	})
 })
 
 // Service describes a service
@@ -25,6 +29,10 @@ var _ = Service("pods", func() {
 		// Result describes the method result
 		// Here the result is a simple integer value
 		Result(Int)
+
+		// Error which applies to all methods.
+		// Error(ErrUnauthorized, Unauthorized)
+
 		// HTTP describes the HTTP transport mapping
 		HTTP(func() {
 			// Requests to the service consist of HTTP GET requests

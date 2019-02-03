@@ -19,6 +19,8 @@ func NewPods(logger *log.Logger) podssvc.Service {
 
 // Pods implements pods.
 func (s *podssrvc) Pods(ctx context.Context, p *podssvc.PodsPayload) (res int, err error) {
-	s.logger.Print("pods.pods")
+	s.logger.Print("------ pods.pods ---------")
+	s.logger.Print("\n--- A --- \n", p.A)
+	s.logger.Print("\n--- B --- \n", p.B)
 	return
 }
