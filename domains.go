@@ -1,4 +1,4 @@
-package ninepod
+package pods
 
 import (
 	"context"
