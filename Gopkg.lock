@@ -57,7 +57,7 @@
     "middleware",
     "pkg"
   ]
-  revision = "3f92804cc04bab1c01dfc01d3c52217bbc6550db"
+  revision = "1eb5affc35cc462ae8a3f099519adbd5b3c7a317"
 
 [[projects]]
   branch = "master"
