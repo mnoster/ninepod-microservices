@@ -47,4 +47,5 @@ cd cmd/http-cli
 go build
 
 ./http-cli pods pods --a 7674819484560861460 --b "Entertainment"
+
 ```
